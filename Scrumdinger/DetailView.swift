@@ -10,6 +10,8 @@ import SwiftUI
 struct DetailView: View {
     let scrum: DailyScrum
     
+    @State private var isPresentingEditView = false
+    
     var body: some View {
         List {
             Section(header: Text("Meeting Info")) {
@@ -42,6 +44,30 @@ struct DetailView: View {
             }
         }
         .navigationTitle(scrum.title)
+        .sheet(isPresented: $isPresentingEditView) { // when isPresentingEditView is true. But how do you change it to true?
+            NavigationView {
+                DetailEditView()
+                    .navigationTitle(scrum.title)
+                    .toolbar{
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                isPresentingEditView = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") {
+                                isPresentingEditView = false
+                            }
+                        }
+                    }
+            }
+        }
+        .toolbar{
+            Button ("Edit") { //This is how you add button in another way
+                isPresentingEditView = true
+            }
+        }
+
     }
 }
 

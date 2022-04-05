@@ -17,6 +17,7 @@
 		7CB413F726EAC76E00544BA7 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB413F626EAC76E00544BA7 /* TrailingIconLabelStyle.swift */; };
 		7CB413F926EB9A1A00544BA7 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB413F826EB9A1A00544BA7 /* ScrumsView.swift */; };
 		8754751327EFE9BB00F501D0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8754751227EFE9BB00F501D0 /* DetailView.swift */; };
+		8788A77627F8310A00267697 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788A77527F8310A00267697 /* DetailEditView.swift */; };
 		AA0F3C4E27208C4700945F09 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AA0F3C4B27208C4700945F09 /* LICENSE.txt */; };
 		AA0F3C4F27208C4700945F09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AA0F3C4C27208C4700945F09 /* README.md */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		7CB413F626EAC76E00544BA7 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		7CB413F826EB9A1A00544BA7 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		8754751227EFE9BB00F501D0 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8788A77527F8310A00267697 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		AA0F3C4927208C4700945F09 /* SampleCode.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 		AA0F3C4B27208C4700945F09 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		AA0F3C4C27208C4700945F09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				7CB413EF26EA97B300544BA7 /* Models */,
 				7CB413DE26EA824100544BA7 /* ScrumdingerApp.swift */,
+				8788A77527F8310A00267697 /* DetailEditView.swift */,
 				8754751227EFE9BB00F501D0 /* DetailView.swift */,
 				7CB413F426EAC55200544BA7 /* CardView.swift */,
 				7CB413E026EA824100544BA7 /* MeetingView.swift */,
@@ -191,6 +194,7 @@
 			files = (
 				7CB413F326EABF1D00544BA7 /* DailyScrum.swift in Sources */,
 				8754751327EFE9BB00F501D0 /* DetailView.swift in Sources */,
+				8788A77627F8310A00267697 /* DetailEditView.swift in Sources */,
 				7CB413F726EAC76E00544BA7 /* TrailingIconLabelStyle.swift in Sources */,
 				7CB413F126EA97C500544BA7 /* Theme.swift in Sources */,
 				7CB413F926EB9A1A00544BA7 /* ScrumsView.swift in Sources */,

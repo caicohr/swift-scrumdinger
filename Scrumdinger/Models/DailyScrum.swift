@@ -39,4 +39,15 @@ extension DailyScrum { // Nagaramid ka extension tapnu maikabil mo ijjay DetailV
             self.name = name
         }
     }
+    
+    struct Data { // nu naginitialize ka ti values da, no need kanon nga agited arguments if you call Data()
+        var title: String = ""
+        var attendees: [Attendee] = []
+        var lengthInMinutes: Double = 10
+        var theme: Theme = .seafoam
+    }
+    
+    var data: Data { // computed data property ------- probably because you initialized values? if not, you might need to do init() like on top
+        Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
+    }
 }
