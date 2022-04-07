@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailEditView: View {
-    @State private var data = DailyScrum.Data() // State declaration that is private only on this view
+    @Binding var data: DailyScrum.Data // From State to Binding, changed how to initialize it
     @State private var newAttendeeName = ""
     
     
@@ -55,6 +55,6 @@ struct DetailEditView: View {
 
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailEditView() // didn't have to initialize here because of data = DailyScrum.Data() and not data: Data. We did initialize data in Detail Edit View
+        DetailEditView(data: .constant(DailyScrum.sampleData[0].data))
     }
 }
