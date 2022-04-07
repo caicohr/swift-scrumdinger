@@ -11,12 +11,13 @@ struct DetailEditView: View {
     @State private var data = DailyScrum.Data() // State declaration that is private only on this view
     @State private var newAttendeeName = ""
     
+    
     var body: some View {
         Form {
             Section(header: Text("Meeting Info")) {
                 TextField("Title", text: $data.title)
                 HStack {
-                    Slider(value: $data.lengthInMinutes, in: 5...30, step: 1) {// step: 1 is restricting users only to use whole number
+                    Slider(value: $data.lengthInMinutes, in: 5...30, step: 1) {// step: 1 is restricting users only to use whole number (steps they only can choose from
                         Text("Length")
                     }
                     .accessibilityValue("\(Int(data.lengthInMinutes)) minutes")
@@ -24,6 +25,7 @@ struct DetailEditView: View {
                     Text("\(Int(data.lengthInMinutes)) minutes") // what's the difference between the ones with $ sign? (It is the binding sa nya)
                         .accessibilityHidden(true) // not needed because you already added one on top
                 }
+                ThemePicker(selection: $data.theme)
             }
             Section(header: Text("Attendees")) {
                 ForEach(data.attendees) { attendee in

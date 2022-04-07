@@ -27,13 +27,13 @@ struct DetailView: View {
                 }
                 .accessibilityElement(children: .combine)
                 HStack {
-                    Label("Theme", systemImage: "paintpalette")
-                    Spacer()
-                    Text("\(scrum.theme.name)")
-                        .padding(4)
-                        .foregroundColor(scrum.theme.accentColor)
-                        .background(scrum.theme.mainColor)
-                        .cornerRadius(4)
+                        Label("Theme", systemImage: "paintpalette")
+                        Spacer()
+                        Text("\(scrum.theme.name)")
+                            .padding(4)
+                            .foregroundColor(scrum.theme.accentColor)
+                            .background(scrum.theme.mainColor)
+                            .cornerRadius(4)
                 }
                 .accessibilityElement(children: .combine)
             }
