@@ -9,8 +9,8 @@ struct ScrumsView: View {
     
     var body: some View {
         List {
-            ForEach(scrums) { scrum in
-                NavigationLink(destination: DetailView(scrum: $scrums)) {
+            ForEach($scrums) { $scrum in // this is how you bind arrays to individuals
+                NavigationLink(destination: DetailView(scrum: $scrum)) {
                     CardView(scrum: scrum)
                 }
                 .listRowBackground(scrum.theme.mainColor)
