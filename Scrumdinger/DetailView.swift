@@ -58,7 +58,7 @@ struct DetailView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isPresentingEditView = false
-                                scrum.update(from: data)
+                                scrum.update(from: data) // datoy jay kurang jay developer training ti scrumdinger. Awan ti function ijjay model nga kastoy
                             }
                         }
                     }
@@ -67,6 +67,7 @@ struct DetailView: View {
         .toolbar{
             Button ("Edit") { //This is how you add button in another way
                 isPresentingEditView = true
+                    data = scrum.data // adda met gayam datoy ngem han naikabil
             }
         }
 

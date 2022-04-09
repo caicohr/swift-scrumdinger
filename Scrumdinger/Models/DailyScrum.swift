@@ -50,4 +50,11 @@ extension DailyScrum { // Nagaramid ka extension tapnu maikabil mo ijjay DetailV
     var data: Data { // computed data property ------- probably because you initialized values? if not, you might need to do init() like on top
         Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
     }
+    
+    mutating func update(from data: Data) {
+        title = data.title
+        attendees = data.attendees
+        lengthInMinutes = Int(data.lengthInMinutes)
+        theme = data.theme
+    }
 }
